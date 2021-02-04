@@ -12,4 +12,5 @@ class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model=Project
         fields=['id','project_name','client','users']
+        depth=1
         
